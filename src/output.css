@@ -993,17 +993,17 @@
     width: 90%;
     height: 100px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 10px;
   }
   .rasm{
-    width:100px;
+    width:10%;
     text-align: center;
   }
   .qidirish{
-    width: 100%;
+    width: 30%;
     height: 40px;
     display: flex;
     align-items: center;
@@ -1011,7 +1011,7 @@
     gap: 10px;
   }
   .boshqa{
-    width: 100%;
+    width: 45%;
     /* height: 40px; */
     display: flex;
     flex-wrap: wrap;
