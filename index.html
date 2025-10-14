@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-dars</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    
+    <style>
+        body{
+            font-family: 'Electrolize', sans-serif;
+        }
+    
+        .boshqa > button{
+            font-family: 'Electrolize', sans-serif;
+            font-size: 15px;    
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .boshqa > button i{
+            font-size: 20px;
+        }
+        button:hover{
+            color: blue;
+            cursor: pointer;
+        }
+        menu > button{
+            font-family: 'Electrolize', sans-serif; 
+            cursor: pointer;
+        }
+        menu > button i{
+            font-size: 20px;
+        }
+        .up-arrow-botton i{
+            cursor: pointer;
+            color: gray;
+        }      
+    </style>
+    
+</head>
+<body> 
+    <header>
+
+        <nav class="w-[90%] h-[80px] bg-white opacity-85 m-auto  flex justify-around items-center fixed top-0 left-0 right-0 z-50 shadow-md">
+                  
+            <div class="rasm w-[10%]">
+                <img src="./assest/logo.png" alt="">
+            </div>
+            
+            <div class="qidirish w-[40%] relative flex justify-center items-center">
+                
+                <label for="search"></label>
+                <input type="search" name="search" id="search" placeholder="Mahsulotlarni Qidirish..." class="w-[80%] h-[40px] rounded-md pl-5 border border-gray-400">
+                
+                <div class="absolute right-20">
+                    <i class="fa-solid fa-magnifying-glass" ></i>
+                </div>
+
+            </div>
+            
+            <div class="boshqa w-[45%] flex justify-end items-center gap-5">
+                
+                <button>
+                    <i class="fa-solid fa-wallet"></i>
+                    UZS/USD     
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-sliders fa-rotate-90"></i>
+                    Solishtirish
+                </button>
+
+                <button>
+                    <i class="fa-regular fa-heart"></i>
+                    sevimlilar
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Savat
+                </button>
+
+                <button>
+                    <i class="fa-regular fa-message"></i>
+                    Murojat
+                </button>
+
+                <button>
+                    <i class="fa-regular fa-sun"></i>
+                    Tungi rejim 
+                </button>
+
+                <button class="border opacity-35 px-5 py-3">
+                    <i class="fa-regular fa-circle-user"></i>
+                </button>
+
+            </div>
+   
+        </nav>
+        
+        <menu class="w-[60%] h-[60px] bg-gray-50 m-auto mt-28 flex justify-around items-center rounded-md shadow-md ">
+
+                <button class="border border-pink-500 bg-pink-500 p-2.5 rounded-md text-white">
+                    <i class="fa-solid fa-table-cells-large fa-shake"></i>
+                    Kategoriyalar
+                </button>
+                
+                <button>
+                    <i class="fa-solid fa-gear fa-spin"></i>
+                    konfigurator
+                </button>
+                
+                <button>
+                    <i class="fa-solid fa-computer fa-bounce"></i>
+                    Kompyuterlar sotib olish
+                </button>
+                
+                <button>
+                    Yangiliklar
+                </button>
+                
+                <button>
+                    HyperX
+                </button>
+                
+                <button>
+                    Hamma brendlar
+                </button>
+        </menu>
+        
+        <div class="slider w-[90%] m-auto mt-5 ">
+
+            <div id="default-carousel" class="relative w-full bg-cover" data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                    
+                    <!-- Item 1 -->
+                    
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assest/1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assest/2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assest/3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    
+                    <!-- Item 4 -->
+                    
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assest/4.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    
+                    <!-- Item 5 -->
+                    
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assest/5.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+
+                    <!-- Item 6 -->
+                    
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assest/6.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+
+                    <!-- Item 7 -->
+                    
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assest/7.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                
+                </div>
+
+                <!-- Slider indicators -->
+
+                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                    <button type="button" class="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                    <button type="button" class="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                    <button type="button" class="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                    <button type="button" class="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 6" data-carousel-slide-to="5"></button>
+                    <button type="button" class="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 7 "data-carousel-slide-to="6"></button>
+                </div>
+
+                <!-- Slider controls -->
+
+                <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+
+                        <span class="sr-only">Previous</span>
+
+                    </span>
+
+                </button>
+
+                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"            data-carousel-next>
+
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+
+                        <span class="sr-only">Next</span>
+
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+        
+    </header>
+
+    <div class="cards w-[90%] m-auto mt-10 bg-white  p-5">
+        <h1 class="text-3xl font-bold text-left">Yangiliklar</h1>
+
+        <div class="card-content w-[100%] mt-5 grid grid-cols-5 items-center gap-2">
+
+            <div class="card w-[95%] h-[500px] bg-white flex flex-col justify-between items-center rounded-md shadow-md border border-pink-300">
+                
+                <div class="Tepa w-[100%] h-[50%] relative">
+                    
+                    <img src="./assest/rasm1.png" alt="" class="w-[100%]">
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-2 right-2 hover:bg-pink-400">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-11 right-2 hover:bg-pink-400">
+                        <i class="fa-solid fa-scale-unbalanced fa-bounce"></i>
+                    </button>
+                </div>
+
+                <div class="Past w-[90%] h-[50%] bg-white rounded-md flex flex-col justify-center items-center">
+
+                    <div>
+                        <p class="font-bold text-[12px]">Dark Project ALU87 Bushido Black White (DPKB-BUSHIDO-87)</p>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full">           
+                        <div class="text-[10px]">
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                        </div>
+                        <button class="px-1.5 py-1 bg-pink-300">Dask Project</button>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-start w-[100%] mt-3">
+                        <h2>Narx</h2>
+                        <h1 class="text-2xl font-bold text-pink-500">1,499,000 UZS</h1>
+                    </div>
+
+                    <div class="w-[100%] flex justify-between items-center mt-3">
+                        <button class="w-[90%] h-[40px] m-auto bg-pink-500 text-white rounded-md hover:bg-pink-400">
+                            <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card w-[95%] h-[500px] bg-white flex flex-col justify-between items-center rounded-md shadow-md border border-pink-300">
+                
+                <div class="Tepa w-[100%] h-[50%] relative">
+                    
+                    <img src="./assest/rasm1.png" alt="" class="w-[100%]">
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-2 right-2 hover:bg-pink-400">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-11 right-2 hover:bg-pink-400">
+                        <i class="fa-solid fa-scale-unbalanced fa-bounce"></i>
+                    </button>
+                </div>
+
+                <div class="Past w-[90%] h-[50%] bg-white rounded-md flex flex-col justify-center items-center">
+
+                    <div>
+                        <p class="font-bold text-[12px]">Dark Project ALU87 Bushido Black White (DPKB-BUSHIDO-87)</p>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full">           
+                        <div class="text-[10px]">
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                        </div>
+                        <button class="px-1.5 py-1 bg-pink-300">Dask Project</button>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-start w-[100%] mt-3">
+                        <h2>Narx</h2>
+                        <h1 class="text-2xl font-bold text-pink-500">1,499,000 UZS</h1>
+                    </div>
+
+                    <div class="w-[100%] flex justify-between items-center mt-3">
+                        <button class="w-[90%] h-[40px] m-auto bg-pink-500 text-white rounded-md hover:bg-pink-400">
+                            <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card w-[95%] h-[500px] bg-white flex flex-col justify-between items-center rounded-md shadow-md border border-pink-300">
+                
+                <div class="Tepa w-[100%] h-[50%] relative">
+                    
+                    <img src="./assest/rasm1.png" alt="" class="w-[100%]">
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-2 right-2 hover:bg-pink-400">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-11 right-2 hover:bg-pink-400">
+                        <i class="fa-solid fa-scale-unbalanced fa-bounce"></i>
+                    </button>
+                </div>
+
+                <div class="Past w-[90%] h-[50%] bg-white rounded-md flex flex-col justify-center items-center">
+
+                    <div>
+                        <p class="font-bold text-[12px]">Dark Project ALU87 Bushido Black White (DPKB-BUSHIDO-87)</p>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full">           
+                        <div class="text-[10px]">
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                        </div>
+                        <button class="px-1.5 py-1 bg-pink-300">Dask Project</button>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-start w-[100%] mt-3">
+                        <h2>Narx</h2>
+                        <h1 class="text-2xl font-bold text-pink-500">1,499,000 UZS</h1>
+                    </div>
+
+                    <div class="w-[100%] flex justify-between items-center mt-3">
+                        <button class="w-[90%] h-[40px] m-auto bg-pink-500 text-white rounded-md hover:bg-pink-400">
+                            <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card w-[95%] h-[500px] bg-white flex flex-col justify-between items-center rounded-md shadow-md border border-pink-300">
+                
+                <div class="Tepa w-[100%] h-[50%] relative">
+                    
+                    <img src="./assest/rasm1.png" alt="" class="w-[100%]">
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-2 right-2 hover:bg-pink-400">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-11 right-2 hover:bg-pink-400">
+                        <i class="fa-solid fa-scale-unbalanced fa-bounce"></i>
+                    </button>
+                </div>
+
+                <div class="Past w-[90%] h-[50%] bg-white rounded-md flex flex-col justify-center items-center">
+
+                    <div>
+                        <p class="font-bold text-[12px]">Dark Project ALU87 Bushido Black White (DPKB-BUSHIDO-87)</p>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full">           
+                        <div class="text-[10px]">
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                        </div>
+                        <button class="px-1.5 py-1 bg-pink-300">Dask Project</button>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-start w-[100%] mt-3">
+                        <h2>Narx</h2>
+                        <h1 class="text-2xl font-bold text-pink-500">1,499,000 UZS</h1>
+                    </div>
+
+                    <div class="w-[100%] flex justify-between items-center mt-3">
+                        <button class="w-[90%] h-[40px] m-auto bg-pink-500 text-white rounded-md hover:bg-pink-400">
+                            <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card w-[95%] h-[500px] bg-white flex flex-col justify-between items-center rounded-md shadow-md border border-pink-300">
+                
+                <div class="Tepa w-[100%] h-[50%] relative">
+                    
+                    <img src="./assest/rasm1.png" alt="" class="w-[100%]">
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-2 right-2 hover:bg-pink-400">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-11 right-2 hover:bg-pink-400">
+                        <i class="fa-solid fa-scale-unbalanced fa-bounce"></i>
+                    </button>
+                </div>
+
+                <div class="Past w-[90%] h-[50%] bg-white rounded-md flex flex-col justify-center items-center">
+
+                    <div>
+                        <p class="font-bold text-[12px]">Dark Project ALU87 Bushido Black White (DPKB-BUSHIDO-87)</p>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full">           
+                        <div class="text-[10px]">
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                        </div>
+                        <button class="px-1.5 py-1 bg-pink-300">Dask Project</button>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-start w-[100%] mt-3">
+                        <h2>Narx</h2>
+                        <h1 class="text-2xl font-bold text-pink-500">1,499,000 UZS</h1>
+                    </div>
+
+                    <div class="w-[100%] flex justify-between items-center mt-3">
+                        <button class="w-[90%] h-[40px] m-auto bg-pink-500 text-white rounded-md hover:bg-pink-400">
+                            <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card w-[95%] h-[500px] bg-white flex flex-col justify-between items-center rounded-md shadow-md border border-pink-300">
+                
+                <div class="Tepa w-[100%] h-[50%] relative">
+                    
+                    <img src="./assest/rasm1.png" alt="" class="w-[100%]">
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-2 right-2 hover:bg-pink-400">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-11 right-2 hover:bg-pink-400">
+                        <i class="fa-solid fa-scale-unbalanced fa-bounce"></i>
+                    </button>
+                </div>
+
+                <div class="Past w-[90%] h-[50%] bg-white rounded-md flex flex-col justify-center items-center">
+
+                    <div>
+                        <p class="font-bold text-[12px]">Dark Project ALU87 Bushido Black White (DPKB-BUSHIDO-87)</p>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full">           
+                        <div class="text-[10px]">
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                        </div>
+                        <button class="px-1.5 py-1 bg-pink-300">Dask Project</button>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-start w-[100%] mt-3">
+                        <h2>Narx</h2>
+                        <h1 class="text-2xl font-bold text-pink-500">1,499,000 UZS</h1>
+                    </div>
+
+                    <div class="w-[100%] flex justify-between items-center mt-3">
+                        <button class="w-[90%] h-[40px] m-auto bg-pink-500 text-white rounded-md hover:bg-pink-400">
+                            <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card w-[95%] h-[500px] bg-white flex flex-col justify-between items-center rounded-md shadow-md border border-pink-300">
+                
+                <div class="Tepa w-[100%] h-[50%] relative">
+                    
+                    <img src="./assest/rasm1.png" alt="" class="w-[100%]">
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-2 right-2 hover:bg-pink-400">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-11 right-2 hover:bg-pink-400">
+                        <i class="fa-solid fa-scale-unbalanced fa-bounce"></i>
+                    </button>
+                </div>
+
+                <div class="Past w-[90%] h-[50%] bg-white rounded-md flex flex-col justify-center items-center">
+
+                    <div>
+                        <p class="font-bold text-[12px]">Dark Project ALU87 Bushido Black White (DPKB-BUSHIDO-87)</p>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full">           
+                        <div class="text-[10px]">
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                        </div>
+                        <button class="px-1.5 py-1 bg-pink-300">Dask Project</button>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-start w-[100%] mt-3">
+                        <h2>Narx</h2>
+                        <h1 class="text-2xl font-bold text-pink-500">1,499,000 UZS</h1>
+                    </div>
+
+                    <div class="w-[100%] flex justify-between items-center mt-3">
+                        <button class="w-[90%] h-[40px] m-auto bg-pink-500 text-white rounded-md hover:bg-pink-400">
+                            <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card w-[95%] h-[500px] bg-white flex flex-col justify-between items-center rounded-md shadow-md border border-pink-300">
+                
+                <div class="Tepa w-[100%] h-[50%] relative">
+                    
+                    <img src="./assest/rasm1.png" alt="" class="w-[100%]">
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-2 right-2 hover:bg-pink-400">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-11 right-2 hover:bg-pink-400">
+                        <i class="fa-solid fa-scale-unbalanced fa-bounce"></i>
+                    </button>
+                </div>
+
+                <div class="Past w-[90%] h-[50%] bg-white rounded-md flex flex-col justify-center items-center">
+
+                    <div>
+                        <p class="font-bold text-[12px]">Dark Project ALU87 Bushido Black White (DPKB-BUSHIDO-87)</p>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full">           
+                        <div class="text-[10px]">
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                        </div>
+                        <button class="px-1.5 py-1 bg-pink-300">Dask Project</button>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-start w-[100%] mt-3">
+                        <h2>Narx</h2>
+                        <h1 class="text-2xl font-bold text-pink-500">1,499,000 UZS</h1>
+                    </div>
+
+                    <div class="w-[100%] flex justify-between items-center mt-3">
+                        <button class="w-[90%] h-[40px] m-auto bg-pink-500 text-white rounded-md hover:bg-pink-400">
+                            <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card w-[95%] h-[500px] bg-white flex flex-col justify-between items-center rounded-md shadow-md border border-pink-300">
+                
+                <div class="Tepa w-[100%] h-[50%] relative">
+                    
+                    <img src="./assest/rasm1.png" alt="" class="w-[100%]">
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-2 right-2 hover:bg-pink-400">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-11 right-2 hover:bg-pink-400">
+                        <i class="fa-solid fa-scale-unbalanced fa-bounce"></i>
+                    </button>
+                </div>
+
+                <div class="Past w-[90%] h-[50%] bg-white rounded-md flex flex-col justify-center items-center">
+
+                    <div>
+                        <p class="font-bold text-[12px]">Dark Project ALU87 Bushido Black White (DPKB-BUSHIDO-87)</p>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full">           
+                        <div class="text-[10px]">
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                        </div>
+                        <button class="px-1.5 py-1 bg-pink-300">Dask Project</button>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-start w-[100%] mt-3">
+                        <h2>Narx</h2>
+                        <h1 class="text-2xl font-bold text-pink-500">1,499,000 UZS</h1>
+                    </div>
+
+                    <div class="w-[100%] flex justify-between items-center mt-3">
+                        <button class="w-[90%] h-[40px] m-auto bg-pink-500 text-white rounded-md hover:bg-pink-400">
+                            <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+    <div class="cards w-[90%] m-auto mt-10 bg-white  p-5">
+        <h1 class="text-3xl font-bold text-left">Eng yaxshi takliflar</h1>
+
+        <div class="card-content w-[100%] mt-5 grid grid-cols-5 items-center gap-2">
+
+            <div class="card w-[95%] h-[500px] bg-white flex flex-col justify-between items-center rounded-md shadow-md border border-pink-300 ">
+                
+                <div class="Tepa w-[100%] h-[50%] relative">
+                    
+                    <img src="./assest/rasm2.png" alt="" class="w-[100%]">
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-2 right-2 hover:bg-pink-400">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-11 right-2 hover:bg-pink-400">
+                        <i class="fa-solid fa-scale-unbalanced fa-bounce"></i>
+                    </button>
+                </div>
+
+                <div class="Past w-[90%] h-[50%] bg-white rounded-md flex flex-col justify-center items-center">
+
+                    <div>
+                        <p class="font-bold text-[12px]">Dark Project Nexus Wireless Black</p>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full">           
+                        <div class="text-[10px]">
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                        </div>
+                        <button class="px-1.5 py-1 bg-pink-300">Dask Project</button>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-start w-[100%] mt-3">
+                        <h2>Narx</h2>
+                        <h1 class="text-2xl font-bold text-pink-500">1,045,500 UZS</h1>
+                    </div>
+
+                    <div class="w-[100%] flex justify-between items-center mt-3">
+                        <button class="w-[90%] h-[40px] m-auto bg-pink-500 text-white rounded-md hover:bg-pink-400">
+                            <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card w-[95%] h-[500px] bg-white flex flex-col justify-between items-center rounded-md shadow-md border border-pink-300 ">
+                
+                <div class="Tepa w-[100%] h-[50%] relative">
+                    
+                    <img src="./assest/rasm2.png" alt="" class="w-[100%]">
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-2 right-2 hover:bg-pink-400">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-11 right-2 hover:bg-pink-400">
+                        <i class="fa-solid fa-scale-unbalanced fa-bounce"></i>
+                    </button>
+                </div>
+
+                <div class="Past w-[90%] h-[50%] bg-white rounded-md flex flex-col justify-center items-center">
+
+                    <div>
+                        <p class="font-bold text-[12px]">Dark Project Nexus Wireless Black</p>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full">           
+                        <div class="text-[10px]">
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                        </div>
+                        <button class="px-1.5 py-1 bg-pink-300">Dask Project</button>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-start w-[100%] mt-3">
+                        <h2>Narx</h2>
+                        <h1 class="text-2xl font-bold text-pink-500">1,045,500 UZS</h1>
+                    </div>
+
+                    <div class="w-[100%] flex justify-between items-center mt-3">
+                        <button class="w-[90%] h-[40px] m-auto bg-pink-500 text-white rounded-md hover:bg-pink-400">
+                            <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card w-[95%] h-[500px] bg-white flex flex-col justify-between items-center rounded-md shadow-md border border-pink-300 ">
+                
+                <div class="Tepa w-[100%] h-[50%] relative">
+                    
+                    <img src="./assest/rasm2.png" alt="" class="w-[100%]">
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-2 right-2 hover:bg-pink-400">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-11 right-2 hover:bg-pink-400">
+                        <i class="fa-solid fa-scale-unbalanced fa-bounce"></i>
+                    </button>
+                </div>
+
+                <div class="Past w-[90%] h-[50%] bg-white rounded-md flex flex-col justify-center items-center">
+
+                    <div>
+                        <p class="font-bold text-[12px]">Dark Project Nexus Wireless Black</p>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full">           
+                        <div class="text-[10px]">
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                        </div>
+                        <button class="px-1.5 py-1 bg-pink-300">Dask Project</button>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-start w-[100%] mt-3">
+                        <h2>Narx</h2>
+                        <h1 class="text-2xl font-bold text-pink-500">1,045,500 UZS</h1>
+                    </div>
+
+                    <div class="w-[100%] flex justify-between items-center mt-3">
+                        <button class="w-[90%] h-[40px] m-auto bg-pink-500 text-white rounded-md hover:bg-pink-400">
+                            <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card w-[95%] h-[500px] bg-white flex flex-col justify-between items-center rounded-md shadow-md border border-pink-300 ">
+                
+                <div class="Tepa w-[100%] h-[50%] relative">
+                    
+                    <img src="./assest/rasm2.png" alt="" class="w-[100%]">
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-2 right-2 hover:bg-pink-400">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-11 right-2 hover:bg-pink-400">
+                        <i class="fa-solid fa-scale-unbalanced fa-bounce"></i>
+                    </button>
+                </div>
+
+                <div class="Past w-[90%] h-[50%] bg-white rounded-md flex flex-col justify-center items-center">
+
+                    <div>
+                        <p class="font-bold text-[12px]">Dark Project Nexus Wireless Black</p>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full">           
+                        <div class="text-[10px]">
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                        </div>
+                        <button class="px-1.5 py-1 bg-pink-300">Dask Project</button>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-start w-[100%] mt-3">
+                        <h2>Narx</h2>
+                        <h1 class="text-2xl font-bold text-pink-500">1,045,500 UZS</h1>
+                    </div>
+
+                    <div class="w-[100%] flex justify-between items-center mt-3">
+                        <button class="w-[90%] h-[40px] m-auto bg-pink-500 text-white rounded-md hover:bg-pink-400">
+                            <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card w-[95%] h-[500px] bg-white flex flex-col justify-between items-center rounded-md shadow-md border border-pink-300 ">
+                
+                <div class="Tepa w-[100%] h-[50%] relative">
+                    
+                    <img src="./assest/rasm2.png" alt="" class="w-[100%]">
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-2 right-2 hover:bg-pink-400">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-11 right-2 hover:bg-pink-400">
+                        <i class="fa-solid fa-scale-unbalanced fa-bounce"></i>
+                    </button>
+                </div>
+
+                <div class="Past w-[90%] h-[50%] bg-white rounded-md flex flex-col justify-center items-center">
+
+                    <div>
+                        <p class="font-bold text-[12px]">Dark Project Nexus Wireless Black</p>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full">           
+                        <div class="text-[10px]">
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                        </div>
+                        <button class="px-1.5 py-1 bg-pink-300">Dask Project</button>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-start w-[100%] mt-3">
+                        <h2>Narx</h2>
+                        <h1 class="text-2xl font-bold text-pink-500">1,045,500 UZS</h1>
+                    </div>
+
+                    <div class="w-[100%] flex justify-between items-center mt-3">
+                        <button class="w-[90%] h-[40px] m-auto bg-pink-500 text-white rounded-md hover:bg-pink-400">
+                            <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card w-[95%] h-[500px] bg-white flex flex-col justify-between items-center rounded-md shadow-md border border-pink-300 ">
+                
+                <div class="Tepa w-[100%] h-[50%] relative">
+                    
+                    <img src="./assest/rasm2.png" alt="" class="w-[100%]">
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-2 right-2 hover:bg-pink-400">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-11 right-2 hover:bg-pink-400">
+                        <i class="fa-solid fa-scale-unbalanced fa-bounce"></i>
+                    </button>
+                </div>
+
+                <div class="Past w-[90%] h-[50%] bg-white rounded-md flex flex-col justify-center items-center">
+
+                    <div>
+                        <p class="font-bold text-[12px]">Dark Project Nexus Wireless Black</p>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full">           
+                        <div class="text-[10px]">
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                        </div>
+                        <button class="px-1.5 py-1 bg-pink-300">Dask Project</button>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-start w-[100%] mt-3">
+                        <h2>Narx</h2>
+                        <h1 class="text-2xl font-bold text-pink-500">1,045,500 UZS</h1>
+                    </div>
+
+                    <div class="w-[100%] flex justify-between items-center mt-3">
+                        <button class="w-[90%] h-[40px] m-auto bg-pink-500 text-white rounded-md hover:bg-pink-400">
+                            <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card w-[95%] h-[500px] bg-white flex flex-col justify-between items-center rounded-md shadow-md border border-pink-300 ">
+                
+                <div class="Tepa w-[100%] h-[50%] relative">
+                    
+                    <img src="./assest/rasm2.png" alt="" class="w-[100%]">
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-2 right-2 hover:bg-pink-400">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-11 right-2 hover:bg-pink-400">
+                        <i class="fa-solid fa-scale-unbalanced fa-bounce"></i>
+                    </button>
+                </div>
+
+                <div class="Past w-[90%] h-[50%] bg-white rounded-md flex flex-col justify-center items-center">
+
+                    <div>
+                        <p class="font-bold text-[12px]">Dark Project Nexus Wireless Black</p>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full">           
+                        <div class="text-[10px]">
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                        </div>
+                        <button class="px-1.5 py-1 bg-pink-300">Dask Project</button>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-start w-[100%] mt-3">
+                        <h2>Narx</h2>
+                        <h1 class="text-2xl font-bold text-pink-500">1,045,500 UZS</h1>
+                    </div>
+
+                    <div class="w-[100%] flex justify-between items-center mt-3">
+                        <button class="w-[90%] h-[40px] m-auto bg-pink-500 text-white rounded-md hover:bg-pink-400">
+                            <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card w-[95%] h-[500px] bg-white flex flex-col justify-between items-center rounded-md shadow-md border border-pink-300 ">
+                
+                <div class="Tepa w-[100%] h-[50%] relative">
+                    
+                    <img src="./assest/rasm2.png" alt="" class="w-[100%]">
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-2 right-2 hover:bg-pink-400">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-11 right-2 hover:bg-pink-400">
+                        <i class="fa-solid fa-scale-unbalanced fa-bounce"></i>
+                    </button>
+                </div>
+
+                <div class="Past w-[90%] h-[50%] bg-white rounded-md flex flex-col justify-center items-center">
+
+                    <div>
+                        <p class="font-bold text-[12px]">Dark Project Nexus Wireless Black</p>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full">           
+                        <div class="text-[10px]">
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                        </div>
+                        <button class="px-1.5 py-1 bg-pink-300">Dask Project</button>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-start w-[100%] mt-3">
+                        <h2>Narx</h2>
+                        <h1 class="text-2xl font-bold text-pink-500">1,045,500 UZS</h1>
+                    </div>
+
+                    <div class="w-[100%] flex justify-between items-center mt-3">
+                        <button class="w-[90%] h-[40px] m-auto bg-pink-500 text-white rounded-md hover:bg-pink-400">
+                            <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card w-[95%] h-[500px] bg-white flex flex-col justify-between items-center rounded-md shadow-md border border-pink-300 ">
+                
+                <div class="Tepa w-[100%] h-[50%] relative">
+                    
+                    <img src="./assest/rasm2.png" alt="" class="w-[100%]">
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-2 right-2 hover:bg-pink-400">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-11 right-2 hover:bg-pink-400">
+                        <i class="fa-solid fa-scale-unbalanced fa-bounce"></i>
+                    </button>
+                </div>
+
+                <div class="Past w-[90%] h-[50%] bg-white rounded-md flex flex-col justify-center items-center">
+
+                    <div>
+                        <p class="font-bold text-[12px]">Dark Project Nexus Wireless Black</p>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full">           
+                        <div class="text-[10px]">
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                        </div>
+                        <button class="px-1.5 py-1 bg-pink-300">Dask Project</button>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-start w-[100%] mt-3">
+                        <h2>Narx</h2>
+                        <h1 class="text-2xl font-bold text-pink-500">1,045,500 UZS</h1>
+                    </div>
+
+                    <div class="w-[100%] flex justify-between items-center mt-3">
+                        <button class="w-[90%] h-[40px] m-auto bg-pink-500 text-white rounded-md hover:bg-pink-400">
+                            <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card w-[95%] h-[500px] bg-white flex flex-col justify-between items-center rounded-md shadow-md border border-pink-300 ">
+                
+                <div class="Tepa w-[100%] h-[50%] relative">
+                    
+                    <img src="./assest/rasm2.png" alt="" class="w-[100%]">
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-2 right-2 hover:bg-pink-400">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="w-[30px] h-[30px] rounded-full bg-white shadow-md border border-gray-100 flex justify-center items-center absolute top-11 right-2 hover:bg-pink-400">
+                        <i class="fa-solid fa-scale-unbalanced fa-bounce"></i>
+                    </button>
+                </div>
+
+                <div class="Past w-[90%] h-[50%] bg-white rounded-md flex flex-col justify-center items-center">
+
+                    <div>
+                        <p class="font-bold text-[12px]">Dark Project Nexus Wireless Black</p>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full">           
+                        <div class="text-[10px]">
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                            <i class="fa-solid fa-star fa-spin" style="color: #696969;"></i>
+                        </div>
+                        <button class="px-1.5 py-1 bg-pink-300">Dask Project</button>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-start w-[100%] mt-3">
+                        <h2>Narx</h2>
+                        <h1 class="text-2xl font-bold text-pink-500">1,045,500 UZS</h1>
+                    </div>
+
+                    <div class="w-[100%] flex justify-between items-center mt-3">
+                        <button class="w-[90%] h-[40px] m-auto bg-pink-500 text-white rounded-md hover:bg-pink-400">
+                            <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="ads w-[90%] m-auto mt-10 flex justify-between items-center p-5 bg-pink-100 rounded-md">
+        
+        <div class="ung w-[55%]">
+            <h1 class="text-[50px] font-bold text-left">konfigurator</h1>
+            <p class="text-[20px] text-left mt-2">
+
+                UPGrade tizim bloki konfiguratori sizga shaxsiy kompyuter paketini tanlashda va komponentlarning mosligini tekshirishda yordam beradi. O'zingizning orzularingiz konfiguratsiyasini yaratish uchun xususiyatlarni tanlang, solishtiring, qo'shimcha variantlarga buyurtma bering!
+            </p>
+
+            <button class="mt-3 px-5 py-4 bg-pink-500 text-white rounded-md hover:bg-pink-400 flex justify-between items-center">
+                Kompyuterni tanlang
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+
+        </div>
+
+        <div class="chap w-[40%] ">
+            <img src="./assest/rasm3.png" alt="">
+        </div>
+
+    </div>
+
+    <footer class="w-full h-32 mt-5 relative ">
+
+        <div id="upArrow" class="up-arrow fixed bottom-20 right-10 hidden opacity-0 transition-opacity duration-300">
+            <a href="#" id="backToTop" aria-label="Back to top">
+                <i class="fa-solid fa-circle-up fa-2x"></i>
+            </a>
+        </div>
+
+        <script>
+            (function() {
+                        const upArrow = document.getElementById('upArrow');
+                        const backToTop = document.getElementById('backToTop');
+                        const SHOW_AFTER = 200; // pixels scrolled before showing
+
+                        window.addEventListener('scroll', () => {
+                            if (window.scrollY > SHOW_AFTER) {
+                                upArrow.classList.remove('hidden', 'opacity-0');
+                                upArrow.classList.add('opacity-100');
+                            } else {
+                                upArrow.classList.remove('opacity-100');
+                                upArrow.classList.add('opacity-0');
+                                // wait for fade-out before hiding to keep smooth transition
+                            }
+                        });
+
+                        backToTop.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                        });
+                    })();
+        </script>
+
+        <div id="oxirgi" class="w-[90%] m-auto h-[100%] flex justify-between items-center border-t border-gray-300 pt-5">
+            <h1 class="font-bold text-[20px]">UPGrade</h1>
+            <p class="text-[12px]">Barcha huquqlar himoyalangan &copy; 2024</p>
+            <div class="iCon flex justify-between items-center gap-3 text-[20px]">
+
+                <i class="fa-brands fa-facebook fa-bounce"></i>
+                <i class="fa-brands fa-instagram fa-bounce"></i>
+                <i class="fa-brands fa-telegram fa-bounce"></i>
+                <i class="fa-brands fa-twitter fa-bounce"></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+ 
+</html>
